@@ -5,6 +5,7 @@
     <class>Model.Categoria</class>
     <class>Model.Plano</class>
     <class>Model.Cidade</class>
+    <class>Model.Usuario</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/otaku"/>
       <property name="javax.persistence.jdbc.user" value="postgres"/>

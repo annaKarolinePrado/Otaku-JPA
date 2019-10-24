@@ -5,6 +5,7 @@ public enum Sigla {
     RS("Rio Grande do Sul"),
     SC("Santa Catarina"),
     PR("Paraná"),
+    MG("Minas Gerais"),
     SP("São Paulo");
     //
     private String descricao;
