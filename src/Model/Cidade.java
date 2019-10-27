@@ -18,13 +18,16 @@ public class Cidade implements java.io.Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID",nullable = false)
+    @SwingColumn(description = "Código")
     private int id;
     //
     @Column(name = "NOME", length = 100, nullable = false)
+    @SwingColumn(description = "Nome")
     private String nome;
     //
     @Enumerated(EnumType.STRING)
     @Column(name = "SIGLA", length = 2, nullable = false)
+    //@SwingColumn(description = "Sigla")
     private Sigla sigla;
     //
     public Cidade(){        

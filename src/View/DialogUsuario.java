@@ -77,9 +77,11 @@ public class DialogUsuario extends javax.swing.JDialog {
         );        
     }
     private void loadComboCidade(){
-        comboCidade.setModel(
-        new DefaultComboBoxModel(new Vector(new CidadeDAO().getAll()))
-        );
+        comboCidade.setModel(new DefaultComboBoxModel(new Vector(new CidadeDAO().getAll())));
+    }
+    private void loadComboPerfil(){
+        DefaultComboBoxModel cbm = new DefaultComboBoxModel(Perfil.values());
+        comboPerfil.setModel(cbm);
     }
 
     /**
@@ -351,10 +353,9 @@ public class DialogUsuario extends javax.swing.JDialog {
                         .addComponent(textBairro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel5))
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(radioM)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel8)
-                            .addComponent(textNumero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addComponent(jLabel8)
+                        .addComponent(textNumero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(radioM))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9)
@@ -464,6 +465,7 @@ public class DialogUsuario extends javax.swing.JDialog {
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         // TODO add your handling code here:
         this.loadComboCidade();
+        this.loadComboPerfil();
         this.loadTable();
     }//GEN-LAST:event_formWindowOpened
 
