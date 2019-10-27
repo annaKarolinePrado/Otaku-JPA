@@ -41,7 +41,7 @@ public class Usuario implements java.io.Serializable{
     private Perfil perfil;
     //
     public Usuario(){
-        super();       
+        
     }
     public Usuario(int id,String nome,Cidade cidade,String telefone, String endereco,int numero,String bairro,Sexo sexo,Perfil perfil){
         this.setId(id);
@@ -54,15 +54,16 @@ public class Usuario implements java.io.Serializable{
         this.setSexo(sexo);
         this.setPerfil(perfil);
     }
+    //
     public int getId() {
-        return id;
+        return this.id;
     }
     public void setId(int id) {
         this.id = id;
     }
     
     public String getNome() {
-        return nome;
+        return this.nome;
     }
     public void setNome(String nome) {
         this.nome = nome.trim().isEmpty()?"":nome.toUpperCase();;
@@ -79,48 +80,49 @@ public class Usuario implements java.io.Serializable{
         this.telefone=telefone;
     }
     public String getTelefone(){
-        return this.telefone;
+        return this.telefone.trim().isEmpty() ? "" : telefone;
     }
 
     public String getEndereco() {
-        return endereco;
+        return this.endereco;
     }
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
 
     public int getNumero() {
-        return numero;
+        return this.numero;
     }
     public void setNumero(int numero) {
         this.numero = numero;
     }
 
     public String getBairro() {
-        return bairro;
+        return this.bairro;
     }
     public void setBairro(String bairro) {
         this.bairro = bairro;
     }
 
     public Sexo getSexo() {
-        return sexo;
+        return this.sexo;
     }
     public void setSexo(Sexo sexo) {
-        this.sexo = sexo;
+        this.sexo = sexo == null ? Sexo.F : sexo;
     }
 
     public Perfil getPerfil() {
-        return perfil;
+        return this.perfil;
     }
     public void setPerfil(Perfil perfil) {
         this.perfil = perfil;
     } 
+    //
     @Override
     public String toString(){
         return this.nome;
     } 
-
+    //
     @Override
     public int hashCode() {
         int hash = 5;
