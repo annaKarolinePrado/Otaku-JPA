@@ -7,6 +7,14 @@
     <class>Model.Cidade</class>
     <class>Model.Usuario</class>
     <class>Model.Conta</class>
+    <class>Model.Cartao</class>
+    <class>Model.Produtora</class>
+    <class>Model.Proprietario</class>
+    <class>Model.Filme</class>
+    <class>Model.Episodio</class>
+    <class>Model.Comentario</class>
+    <class>Model.Serie</class>
+    <class>Model.Temporada</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/otaku"/>
       <property name="javax.persistence.jdbc.user" value="postgres"/>

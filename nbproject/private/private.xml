@@ -3,10 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/FACULDADE/SISTEMAS%205ª%20FASE/AppOtaku/src/Enums/Sigla.java</file>
-            <file>file:/C:/FACULDADE/SISTEMAS%205ª%20FASE/AppOtaku/src/Controller/UsuarioDAO.java</file>
-            <file>file:/C:/FACULDADE/SISTEMAS%205ª%20FASE/AppOtaku/src/Model/Usuario.java</file>
-            <file>file:/C:/FACULDADE/SISTEMAS%205ª%20FASE/AppOtaku/src/View/DialogUsuario.java</file>
+            <file>file:/C:/FACULDADE/SISTEMAS%205ª%20FASE/AppOtaku/src/Model/Filme.java</file>
+            <file>file:/C:/FACULDADE/SISTEMAS%205ª%20FASE/AppOtaku/src/Model/Temporada.java</file>
+            <file>file:/C:/FACULDADE/SISTEMAS%205ª%20FASE/AppOtaku/src/Model/Comentario.java</file>
+            <file>file:/C:/FACULDADE/SISTEMAS%205ª%20FASE/AppOtaku/src/Model/Episodio.java</file>
+            <file>file:/C:/FACULDADE/SISTEMAS%205ª%20FASE/AppOtaku/src/View/DialogEpisodio.java</file>
+            <file>file:/C:/FACULDADE/SISTEMAS%205ª%20FASE/AppOtaku/src/Controller/TemporadaDAO.java</file>
         </group>
     </open-files>
 </project-private>
