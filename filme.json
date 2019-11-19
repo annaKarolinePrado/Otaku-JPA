@@ -1,0 +1,9 @@
+
+[{
+"id" :10,
+"nome" : "O dia ue a terra não aguentou",
+"duracao" : "31",
+"dataLancamento" :  "1992-05-05",
+"produtora":{"id":1,"nome":"prod"},
+"categoria":{"id":1,"nome":"cat"}
+}] 
